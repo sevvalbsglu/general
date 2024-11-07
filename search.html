@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search İmage</title>
+</head>
+<style>
+    .formwrapper{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        margin:20px 0px;
+    }
+
+    #form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #searchinput{
+        width:75%;
+        padding:5px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: black;
+        color: #fff;
+    }
+
+    .buttonwrapper{
+        margin:10px 0px;
+        display:flex;
+    }
+   
+    #searchbutton{
+        width:75%;
+        margin-right: 5px;
+        padding:7px;
+        border-radius: 5px;
+        background-color: rgb(39, 63, 114);
+        color:#fff;
+        border:none;
+    }
+    #searchbutton:hover{
+        box-shadow: 2px 5px 7px rgb(23, 158, 203);
+        transition: all 0.50s ease-out;
+    }
+    #clearbutton{
+        width:75%;
+        padding:7px;
+        border-radius: 5px;
+        background-color: rgb(120, 7, 45);
+        color:#fff;
+        border:none;
+    }
+    #clearbutton:hover{
+        box-shadow: 2px 5px 7px pink;
+        transition: all 0.50s ease-out;
+    }
+    .imagelist{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;/*ekran taşınca aşağı geç*/
+    justify-content: center;
+    }
+    .card{
+        margin: 20px;
+        border:1px solid grey;
+        padding:15px;
+        border-radius: 5px;
+        box-shadow: 3px 5px 8px grey;
+    }
+
+    body{
+        background-color: black;
+    }
+</style>
+<body>
+    <div>
+        <div class="formwrapper">
+            <form id="form">
+                <input id="searchinput" type="text" placeholder="Search">
+                <div class="buttonwrapper">
+                    <button id="searchbutton">Search</button>
+                    <button id="clearbutton">Clear</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="imagelist">
+
+        </div>
+    </div>
+    <script src="search.js"></script>
+</body>
+</html>
